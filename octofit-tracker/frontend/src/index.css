@@ -95,6 +95,54 @@ p {
   margin: 0;
 }
 
+:root {
+  --ink: #1d3028;
+  --muted-ink: #75837a;
+  --paper: #f5f7f1;
+  --white: #fff;
+  --line: #dfe7dd;
+  --forest: #173c32;
+  --forest-light: #255747;
+  --lime: #c9ed72;
+  --coral: #f07d60;
+  --aqua: #57bdb5;
+  color: var(--ink);
+  background: var(--paper);
+  color-scheme: light;
+  font-family: 'Avenir Next', 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--paper);
+}
+
+#root {
+  display: block;
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  border: 0;
+  text-align: left;
+}
+
+button,
+a {
+  font: inherit;
+}
+
 code,
 .counter {
   font-family: var(--mono);
